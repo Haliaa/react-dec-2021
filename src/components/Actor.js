@@ -9,4 +9,5 @@ const Actor = ({name1, img1}) => {
     );
 };
 
+
 export default Actor;
