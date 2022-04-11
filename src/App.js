@@ -3,7 +3,6 @@ import Users from "./components/Users";
 import Posts from "./components/Posts";
 import Comments from "./components/Comments";
 
-
 function App() {
   return (
       <>
@@ -16,9 +15,9 @@ function App() {
           <h2>Posts:</h2>
           <hr/>
           <Posts/>
-          <hr/>
+          <hr/><hr/><hr/>
           <h2>Comments:</h2>
-          <hr/>
+          <hr/><hr/><hr/>
           <Comments/>
       </>
   )
