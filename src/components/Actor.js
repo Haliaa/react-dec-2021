@@ -1,4 +1,3 @@
-
 const Actor = ({name1, img1}) => {
     // const {name1,img1} = props //name1=props.name1, img1=props.img1
     return (
