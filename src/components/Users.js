@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import User from "./User";
 
-
 const Users = () => {
     const [users, setUsers] = useState([]);
 useEffect(() => {
