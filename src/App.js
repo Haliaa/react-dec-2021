@@ -1,27 +1,27 @@
-import './App.css'
-import Actor from "./components/Actor";
-import Users from "./components/Users";
+// import './App.module.css' //the same level(1)
+// import '../public' //next level(2)
+// import '../../mongoDB' //next level(3)
+// import '../../../Desktop' //next level(4)...
 
-const actors = [
-    {id:1, name: 'Tom', img: 'https://i.pinimg.com/originals/68/a6/7c/68a67c62366eaff0fa686f81d18ed4ea.png'},
-    {id:2, name: 'Jerry', img: 'https://i.pinimg.com/564x/a1/66/75/a1667537bfd23e4d72a3c826e2b8db8d.jpg'},
-    {id:3, name: 'Luntik', img: 'https://i.pinimg.com/564x/72/62/c2/7262c2118c72347a08db8cce57527957.jpg'},
-    {id:4, name: 'Minion', img: 'https://i.pinimg.com/564x/cb/c5/fd/cbc5fd14edc9546da00ee7961f59a086.jpg'}
-]
+// import FF, {hello1, hello2} from "./components/Users/Users"; //not default export
+// import FF from "./components/Users/Users"; //can be renamed here
 
+import css from './App.module.css'
+import {SingleUser, Users} from "./components";
+import {useState} from "react";
+import {Form1} from "./components/Form1/Form1";
+import {Form2} from "./components/Form2/Form2";
 
-function App() {
-  return (
-      <>
-          {/*{actors.map(actor=><Actor key={actor.id} name1={actor.name} img1={actor.img}/>)}*/}
-          <Users/>
-      </>
-  )
-}
+const App = () => {
+    const [singleUser, setSingleUser] = useState(null);
+    return (
+        <div>
+            {/*{singleUser && <SingleUser user={singleUser} />}*/}
+            {/*<Users getUser={setSingleUser}/>*/}
+            {/*<Form1/>*/}
+            <Form2/>
+        </div>
+    );
+};
 
 export default App;
-
-
-
-
-
