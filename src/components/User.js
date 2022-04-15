@@ -1,10 +1,9 @@
-const User = ({user}) => {
-    const {id, name, username, email} = user
+const User = () => {
     return (
         <div>
-            {id} -- {name} -- {username} --{email}
+            User
         </div>
     );
 };
 
-export default User;
+export {User};
