@@ -12,4 +12,5 @@ const Post = ({post}) => {
     );
 };
 
+
 export {Post};
