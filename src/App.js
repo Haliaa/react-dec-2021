@@ -16,6 +16,7 @@ const App = () => {
                         <Route path={':id'} element={<SinglePostPage/>}/>
                     </Route>
                     <Route path={'about'} element={<AboutPage/>}/>
+                    <Route path={'login'}
                     <Route path={'*'} element={<NotFoundPage/>}/>
                 </Route>
             </Routes>

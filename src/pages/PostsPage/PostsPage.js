@@ -5,14 +5,14 @@ import {Outlet, useSearchParams} from "react-router-dom"
 import {MyContext} from "../../index";
 
 const PostsPage = () => {
-    const value = useContext(MyContext)
+    // const value = useContext(MyContext)
     const [posts, setPosts]=useState([])
     const [query, setQuery] = useSearchParams({page: '1'});
 
     useEffect(()=>{
         postsService.getAllPosts(query.get('page'),10).then(({data})=>setPosts(data))
-        console.log(value)
-        value.name = 'Kate'
+        // console.log(value)
+        // value.name = 'Kate'
     },[query])
 
     const nextPage = () => {

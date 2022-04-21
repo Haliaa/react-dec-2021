@@ -5,4 +5,4 @@ export * from './PostsPage/PostsPage'
 export * from './UsersPage/UsersPage'
 export * from './SinglePostPage/SinglePostPage'
 export * from './PostDetails/PostDetails'
-
+export * from './LoginPage/LoginPage'
