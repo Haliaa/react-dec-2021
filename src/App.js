@@ -60,8 +60,8 @@ const App = () => {
           <h3>Counter3</h3>{state.counter3}
           <button onClick={() => dispatch({ type: 'inc3'})}>inc</button>
           <button onClick={() => dispatch({ type: 'dec3'})}>dec</button>
-          <button onClick={() => dispatch({ type: 'reset3' })}>reset</button>
-          <button onClick={() => dispatch({ type: 'set30' })}>set 30</button>
+          <button onClick={() => dispatch({ type: 'reset3'})}>reset</button>
+          <button onClick={() => dispatch({ type: 'set30'})}>set 30</button>
         </div>
       </div>
     );
