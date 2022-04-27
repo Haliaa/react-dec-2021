@@ -1,9 +1,14 @@
-import {Counter} from "./components";
+import {Counter, Users, Form} from "./components";
 
 const App = () => {
     return (
         <div>
             <Counter/>
+            <hr/>
+            <hr/>
+            <hr/>
+            <Form/>
+            <Users/>
         </div>
     );
 };
