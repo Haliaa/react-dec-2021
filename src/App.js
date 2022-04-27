@@ -1,8 +1,9 @@
+import {Counter} from "./components";
+
 const App = () => {
     return (
         <div>
-
-
+            <Counter/>
         </div>
     );
 };
