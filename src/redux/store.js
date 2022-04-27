@@ -1,6 +1,9 @@
-import {combineReducers, createStore} from "redux";
+import {applyMiddleware, bindActionCreators, combineReducers, createStore} from "redux";
 import {reducerUsers} from "./users.reducer"
 import {reducerPosts} from "./posts.reducer"
+import thunk from "redux-thunk";
 let reducers = combineReducers({usersState:reducerUsers, postsState:reducerPosts});
 
-export let store = createStore(reducers)
+const loadUsers = ()=>async (dispatch) => {}
+
+export let store = createStore(reducers,applyMiddleware(thunk))

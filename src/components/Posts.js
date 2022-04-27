@@ -7,9 +7,11 @@ const Posts = () => {
                       // OR    useSelector( ({postState})=>postState )
     let dispatch = useDispatch()
 
-    useEffect(()=>{fetch('https://jsonplaceholder.typicode.com/posts')
-        .then(value => value.json())
-        .then(value=>loadPosts(value,dispatch))
+    useEffect(()=>{
+        // fetch('https://jsonplaceholder.typicode.com/posts')
+        // .then(value => value.json())
+        // .then(value=>loadPosts(value,dispatch))
+        dispatch(loadPosts())
     },[])
 
 

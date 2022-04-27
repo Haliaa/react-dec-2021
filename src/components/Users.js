@@ -7,11 +7,12 @@ export function Users () {
     let dispatch = useDispatch()
 
     // console.log(defaultRootState)
-
+    //
     useEffect(()=>{
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(value => value.json())
-            .then(value => loadUsers(value,dispatch))
+        // fetch('https://jsonplaceholder.typicode.com/users')
+        //     .then(value => value.json())
+        //     .then(value => loadUsers(value))
+        dispatch(loadUsers())
             },[])
 
     return (
