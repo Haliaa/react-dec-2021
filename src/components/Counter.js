@@ -11,6 +11,7 @@ const Counter = () => {
                 <button onClick={() => dispatch(counterActions.decCount1())}>DEC</button>
                 <button onClick={() => dispatch(counterActions.resetCount1(0))}>RESET</button>
             </div>
+
             <div><h1>Count2: {count2}</h1>
                 <button onClick={() => dispatch(counterActions.incCount2())}>INC</button>
                 <button onClick={() => dispatch(counterActions.decCount2())}>DEC</button>
