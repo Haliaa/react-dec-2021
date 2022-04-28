@@ -3,8 +3,8 @@ import catReducer from "./slices/cat.slice";
 import dogReducer from "./slices/dog.slice";
 
 const rootReducer = combineReducers({
-    cat:catReducer,
-    dog:dogReducer
+    cats:catReducer,
+    dogs:dogReducer
 });
 
 const store = configureStore({

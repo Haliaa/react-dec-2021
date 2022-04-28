@@ -1,14 +1,15 @@
-import {Form, Cats} from "./components";
+import {CatForm, Cats} from "./components";
 import {Dogs} from "./components/Dogs";
+import {DogForm} from "./components/DogForm";
 
 const App = () => {
     return (
         <div>
-            <Form/>
             <h1>Cats:</h1>
+            <CatForm/>
             <Cats/>
-            <hr/>
             <h1>Dogs:</h1>
+            <DogForm/>
             <Dogs/>
         </div>
     );
