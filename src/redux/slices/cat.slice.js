@@ -17,6 +17,7 @@ const catSlice= createSlice({
             const index = state.cats.findIndex(value=>value.id===action.payload.id);
             state.cats.splice(index,1)
         }
+
     }
 })
 
