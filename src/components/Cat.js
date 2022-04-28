@@ -6,6 +6,7 @@ const Cat = ({cat:{id,name}}) => {
     return (
         <div>
             {id}***{name}
+            {/*<button onClick={()=>dispatch(catActions.setCatForUpdate({cat}))}>update</button>*/}
             <button onClick={()=>dispatch(catActions.deleteById({id}))}>delete</button>
         </div>
     );

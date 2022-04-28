@@ -5,8 +5,10 @@ const App = () => {
     return (
         <div>
             <Form/>
+            <h1>Cats:</h1>
             <Cats/>
             <hr/>
+            <h1>Dogs:</h1>
             <Dogs/>
         </div>
     );

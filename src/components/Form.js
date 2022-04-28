@@ -11,14 +11,14 @@ const Form = () => {
     return (
         <div>
             <div>
-                <input type='text' ref={catInput}/>
+                <input type='text' ref={catInput} placeholder='enter cat name'/>
                 <button onClick={() => dispatch(catActions.add({name: catInput.current.value}))}>Add cat</button>
             </div>
             <hr/>
             <hr/>
             <hr/>
             <div>
-                <input type='text' ref={dogInput}/>
+                <input type='text' ref={dogInput} placeholder='enter dog name'/>
                 <button onClick={() => dispatch(dogActions.add({name: dogInput.current.value}))}>Add dog</button>
             </div>
         </div>
