@@ -46,14 +46,17 @@ const carSlice = createSlice({
             .addCase(getAll.fulfilled,(state,action)=>{
                 state.status = 'fulfilled'
                 state.cars = action.payload
+                console.log(action.type)
             })
             .addCase(createAsync.fulfilled,(state, action) => {
                 console.log('fulfilled');
+                console.log(action.type)
             })
             .addCase(createAsync.rejected,(state, action) => {
                 const {status, formErrors} = action.payload
                 state.status = status
                 state.formErrors = formErrors
+                console.log(action.type)
             })
     }
     // extraReducers:{
