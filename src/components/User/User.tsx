@@ -5,11 +5,13 @@ interface IProps{
     user:IUser
 }
 
-const User:FC<IProps> = ({user}) => {
+const User:FC<IProps> = ({user:{id,name,username,email}}) => {
 
     return (
         <div>
-            
+            <h3>{id} {name}</h3>
+            <h4>{username}</h4>
+            <div>{email}</div>
         </div>
     );
 };
