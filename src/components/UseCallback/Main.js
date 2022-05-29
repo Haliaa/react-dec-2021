@@ -6,10 +6,10 @@ const Main = () => {
     const [count1, setCount1] = useState(0);
     const [count2, setCount2] = useState(0);
 
-    // викликається завжди при зміні будь-чого
-    const seyHey = () => {
-        console.log('hey')
-    }
+    // // викликається завжди при зміні будь-чого
+    // const seyHey = () => {
+    //     console.log('hey')
+    // }
 
     // викликається один раз при запуску
     // const seyHey = useCallback (() => {
@@ -17,9 +17,9 @@ const Main = () => {
     // }, [])
 
     // викликається при зміні count2
-    // const seyHey = useCallback (() => {
-    //     console.log('hey')
-    // }, [count2])
+    const seyHey = useCallback (() => {
+        console.log('hey')
+    }, [count2])
 
     return (
         <div>
